@@ -1,0 +1,8 @@
+<macro name="Sample" icon="PLAY">
+   <assert-service description="Ensure 0000ffff-0000-1000-8000-00805f9b34fb service" uuid="0000ffff-0000-1000-8000-00805f9b34fb">
+      <assert-characteristic description="Ensure 0000ff01-0000-1000-8000-00805f9b34fb characteristic" uuid="0000ff01-0000-1000-8000-00805f9b34fb">
+         <property name="WRITE" requirement="MANDATORY"/>
+      </assert-characteristic>
+   </assert-service>
+   <write description="Write 0x03 to 0000ff01-0000-1000-8000-00805f9b34fb" characteristic-uuid="0000ff01-0000-1000-8000-00805f9b34fb" service-uuid="0000ffff-0000-1000-8000-00805f9b34fb" value="03" type="WRITE_REQUEST"/>
+</macro>
